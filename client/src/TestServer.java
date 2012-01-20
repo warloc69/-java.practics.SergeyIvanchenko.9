@@ -16,7 +16,8 @@ public class TestServer {
             FileServer hello = (FileServer) Naming.lookup(lookupString);
             log.info("RMI object found");
 			FileLoader fl = new FileLoader();
-			fl.loadFile(args[2],hello);
+			//fl.loadFile(args[2],hello);
+			fl.loadBuffFile(args[2],hello);
 		} catch (Exception e) {
 			log.info(e);
 		}

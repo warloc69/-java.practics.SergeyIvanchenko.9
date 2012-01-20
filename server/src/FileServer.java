@@ -5,5 +5,6 @@ public interface FileServer extends Remote {
 	public void close() throws RemoteException,BadFileException;
 	public int available() throws RemoteException,BadFileException;
 	public int read() throws RemoteException,BadFileException;
+	public byte[] read(int bufsize) throws RemoteException,BadFileException;
 }
 	
